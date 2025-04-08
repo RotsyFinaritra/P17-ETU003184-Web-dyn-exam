@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.1">
+    <display-name>exam</display-name>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>main.java.controllers.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <!-- prévision ranoray -->
+    <servlet>
+        <servlet-name>FormPrevisionServlet</servlet-name>
+        <servlet-class>main.java.controllers.FormPrevisionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormPrevisionServlet</servlet-name>
+        <url-pattern>/form-prevision</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <servlet-class>main.java.controllers.PrevisionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <url-pattern>/liste-prevision</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PrevisionServlet</servlet-name>
+        <url-pattern>/addPrevision</url-pattern>
+    </servlet-mapping>
+
+    <!-- depense ranoray -->
+    <servlet>
+        <servlet-name>FormDepenseServlet</servlet-name>
+        <servlet-class>main.java.controllers.FormDepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormDepenseServlet</servlet-name>
+        <url-pattern>/form-depense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepenseServlet</servlet-name>
+        <servlet-class>main.java.controllers.DepenseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/liste-depense</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DepenseServlet</servlet-name>
+        <url-pattern>/addDepense</url-pattern>
+    </servlet-mapping>
+
+    <!-- resaka etat -->
+    <servlet>
+        <servlet-name>EtatServlet</servlet-name>
+        <servlet-class>main.java.controllers.EtatServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EtatServlet</servlet-name>
+        <url-pattern>/etat</url-pattern>
+    </servlet-mapping>
+
+</web-app>
